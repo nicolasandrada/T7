@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>MDLH</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">¿Quienes somos?</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <div>
+                <h3>Nombre</h3>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div>
+                <h3>Tipo de Cliente</h3>
+                <select name="tipo" id="tipo">
+                    <option value="Consumidor Final">Consumidor Final</option>
+                    <option value="Responzable Inscripto">Responzable Inscripto</option>
+                    <option value="Monotibutriste">Monotibutriste</option>
+                </select>
+            </div>
+
+            <div class="detalle">
+                <h3>Detalle</h3>
+                <label for="tipo_arreglo">Tipo de arreglo</label>
+                <select name="tipo_arreglo" id="tipo_arreglo">
+                    <option value="Repuesto">Repuesto</option>
+                    <option value="Pintura">Pintura</option>
+                    <option value="Mecanica">Mecanica</option>
+                    <option value="Balanceo">Balanceo</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                </select>
+                <label for="coste">Coste</label>
+                <input type="number" name="coste" id="coste">
+                <input type="button" value="Agregar" id="agregar">
+            </div>
+
+            <table id="detalle">
+                <tr>
+                    <th>Tipo de arreglo</th>
+                    <th>Precio</th>
+                </tr>
+            </table>
+
+            <h3>Extra</h3>
+            <div class="extra">
+
+                <div>
+                    <h3>Cliente Regular</h3>
+                    <label for="si-c">Si</label>
+                    <input type="radio" name="cliente" id="si-c" value="si" checked>
+                    <label for="no-c">No</label>
+                    <input type="radio" name="cliente" id="no-c" value="no">
+                </div>
+                
+                <div>
+                    <h3>¿Es para aseguradora?</h3>
+                    <label for="si-a">Si</label>
+                    <input type="radio" name="aseguradora" id="si-a" value="Si" checked>
+                    <label for="no-a">No</label>
+                    <input type="radio" name="aseguradora" id="no-a" value="no">
+                </div>
+
+            </div>
+
+            <div>
+                <input type="button" value="Calcular" id="calcular">
+            </div>
+
+        </form>   
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
